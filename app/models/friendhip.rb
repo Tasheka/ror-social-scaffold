@@ -1,5 +1,4 @@
 class Friendhip < ApplicationRecord::Base
-
   validates :friend_id, uniqueness: true, presence: true
 
   belongs_to :user
