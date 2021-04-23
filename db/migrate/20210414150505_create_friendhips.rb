@@ -1,7 +1,7 @@
-class CreateFriendhips < ActiveRecord::Migration
+class CreateFriendhips < ActiveRecord::Migration[5.2]
   def change
     create_table :friendhips do |t|
-      t.refereces :user, index: true, foreign_key: true
+      t.references :user, index: true, foreign_key: true
       t.references :friend, index: true
       t.boolean :confirmed
 
