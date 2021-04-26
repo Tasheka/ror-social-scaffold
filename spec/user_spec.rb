@@ -10,11 +10,9 @@ RSpec.describe User, type: :model do
         it { should have_many(:pending_friendships) }
         it { should have_many(:confirmed_friendships) }
         it { should have_many(:invitations) }
-        end
     end
 
     context 'Checks comment validations' do
         it { should validate_presence_of(:user) }
-        end
     end
 end
