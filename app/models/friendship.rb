@@ -1,4 +1,4 @@
-class Friendhip < ApplicationRecord::Base
+class Friendship < ApplicationRecord::Base
   validates :friend_id, uniqueness: true, presence: true
 
   belongs_to :user
