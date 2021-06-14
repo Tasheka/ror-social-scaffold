@@ -1,7 +1,7 @@
 class FriendhipsController < ApplicationController
 
       def index
-          @friendhips = current_user.friend_requests.uniq
+        @friend_requests = current_user.pending_friends
       end
     
       def create

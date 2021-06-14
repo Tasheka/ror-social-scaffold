@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'users#show'
+  root 'friendhips#index'
 
   devise_for :users
 

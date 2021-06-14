@@ -5,9 +5,7 @@
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
   </span>
    ||
-  <span class="profile-link">
   <% if !current_user.friend?(user) && !current_user.invite_sent?(user)%> 
   <%= link_to 'Invite to friendship',  friendhips_path(id: user.id), class: 'profile-link' %>
   <% end %>
-  </span>
 </li>
